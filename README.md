@@ -100,3 +100,67 @@ H4CKER.ORG
 [*] Notes: None
 [*] Region: None
 
+what dns record type found?
+─$ dnsenum h4cker.org
+dnsenum VERSION:1.3.1
+
+-----   h4cker.org   -----
+
+
+Host's addresses:
+__________________
+
+h4cker.org.                              5        IN    A        185.199.111.153
+h4cker.org.                              5        IN    A        185.199.108.153
+h4cker.org.                              5        IN    A        185.199.110.153
+h4cker.org.                              5        IN    A        185.199.109.153
+
+
+Name Servers:
+______________
+
+ns-cloud-c1.googledomains.com.           5        IN    A        216.239.32.108
+ns-cloud-c2.googledomains.com.           5        IN    A        216.239.34.108
+ns-cloud-c3.googledomains.com.           5        IN    A        216.239.36.108
+ns-cloud-c4.googledomains.com.           5        IN    A        216.239.38.108
+
+                                                                                                                                                                                                                                            
+Mail (MX) Servers:                                                                                                                                                                                                                          
+___________________                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                            
+mxa.mailgun.org.                         5        IN    A        34.160.63.108                                                                                                                                                              
+mxb.mailgun.org.                         5        IN    A        34.160.157.95
+
+                                                                                                                                                                                                                                            
+Trying Zone Transfers and getting Bind Versions:                                                                                                                                                                                            
+_________________________________________________                                                                                                                                                                                           
+                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                            
+Trying Zone Transfer for h4cker.org on ns-cloud-c2.googledomains.com ... 
+AXFR record query failed: REFUSED
+
+Trying Zone Transfer for h4cker.org on ns-cloud-c1.googledomains.com ... 
+AXFR record query failed: REFUSED
+
+Trying Zone Transfer for h4cker.org on ns-cloud-c4.googledomains.com ... 
+AXFR record query failed: REFUSED
+
+Trying Zone Transfer for h4cker.org on ns-cloud-c3.googledomains.com ... 
+AXFR record query failed: REFUSED
+
+                                                                                                                                                                                                                                            
+Brute forcing with /usr/share/dnsenum/dns.txt:                                                                                                                                                                                              
+_______________________________________________                                                                                                                                                                                             
+                                                                                                                                                                                                                                            
+lab.h4cker.org.                          5        IN    CNAME    santosomar.github.io.                                                                                                                                                      
+santosomar.github.io.                    5        IN    A        185.199.111.153
+santosomar.github.io.                    5        IN    A        185.199.109.153
+santosomar.github.io.                    5        IN    A        185.199.108.153
+santosomar.github.io.                    5        IN    A        185.199.110.153
+mail.h4cker.org.                         5        IN    CNAME    pentestplus.github.io.
+pentestplus.github.io.                   5        IN    A        185.199.111.153
+pentestplus.github.io.                   5        IN    A        185.199.108.153
+pentestplus.github.io.                   5        IN    A        185.199.109.153
+pentestplus.github.io.                   5        IN    A        185.199.110.153
+portal.h4cker.org.                       5        IN    CNAME    pentestplus.github.io.
+
