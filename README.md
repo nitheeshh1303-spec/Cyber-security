@@ -55,6 +55,7 @@ total 0
 -rwxr-x-wx 1 root root 0 Mar 10 02:09 fine.txt
 
 how to find subdomains:
+
 recon-ng][default] > db insert domains
 domain (TEXT): h4cker.org
 notes (TEXT): 
@@ -101,6 +102,7 @@ H4CKER.ORG
 [*] Region: None
 
 what dns record type found?
+
 ─$ dnsenum h4cker.org
 dnsenum VERSION:1.3.1
 
@@ -163,4 +165,20 @@ pentestplus.github.io.                   5        IN    A        185.199.108.153
 pentestplus.github.io.                   5        IN    A        185.199.109.153
 pentestplus.github.io.                   5        IN    A        185.199.110.153
 portal.h4cker.org.                       5        IN    CNAME    pentestplus.github.io.
+
+how many email address are discovered?
+using harvester
+Target: h4cker.org 
+
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+        Searching 0 results.
+[*] Searching Bing. 
+
+[*] No IPs found.
+
+[*] No emails found.
+
+[*] No people found.
+
+[*] No hosts found.
 
